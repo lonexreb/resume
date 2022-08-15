@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Shubhankar Tripathy}
+%\tagline{Senior Software Engineer - iOS}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{stripathy@umass.edu}
+%   \phone{+49-173-6895039}
+  %\mailaddress{Address: Maruthi Nagar, Banglore}
+  \location{Amherst, MA}
+  \linkedin{linkedin.com/in/shubhankar-tripathy}
+  \phone{+1 (413) 612 7524}   \github{github.com/lonexreb} 
+  %\printinfo{\faMedium}{medium.com/@abhimuralidharan}
+ % \printinfo{\faStackOverflow}{https://goo.gl/zBv3hW}
+  
+  % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+\cvevent{Tech and Product Management Intern}{DegreeSight}{July, 2022 -- Present}{Austin, TX}
+\begin{itemize}
+\item Implement innovative strategies to promote sales and adoption of platform, which allows users to seamlessly transfer between institutions of higher education.
+\item Maintain efficient product management strategy using tools including Mindmapping, Confluence, JIRA and complex data analytics.
+% \item Hands on experience on iOS app called EventSecurity Committee
+\end{itemize}
+\divider
+
+\cvevent{Undergraduate Researcher}{CICS, UMass Amherst}{Dec '20 -- Jan '21}{Amherst, MA}
+\begin{itemize}
+\item Programmed adaptive sampling method using scikit-learn library in Python. 
+\item Developed predictive mapping algorithm for 2D scaler fields utilizing Gaussian process.
+\item Presented final research to students, faculty and staff of CICS.
+\item Link to the presentation \url{https://bit.ly/URV-W21}.
+% \item End to end UI development and implementation for  multiple screens .
+% \item Created custom UI controls and performance optimization.
+
+% \item Mentoring and review code for a trainee.
+
+% \item Worked on full application development life cycle.
+% \item Handling team.
+\end{itemize}
+\divider
+
+\cvevent{Data Analyst Intern}{Shyam Metallics}{Nov '18 -- May '19}{Sambalpur, Odisha, India}
+\begin{itemize}
+\item Built and improved projections model with better accuracy and forecasted the volume of business using Pandas, NumPy, and MatPloLib libraries of Python. 
+\item Coded in Python to build algorithmic programs to solve pipe and cisterns mathematical problems for Utility Department.
+\item•	Reduced revenue loss by 15.5\% by optimizing datasets of raw material intake, using SQL queries.
+% \item End to end UI development and implementation for  multiple screens .
+% \item Created custom UI controls and performance optimization.
+
+% \item Mentoring and review code for a trainee.
+
+% \item Worked on full application development life cycle.
+% \item Handling team.
+\end{itemize}
+
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection[page1sidebar]{Project}
+\cvevent{FoodMood}{Winner @TreeHacks - Hackthon  \url {https://tinyurl.com/foodmood-treehacks}}{Feb '22}{Stanford '22}
+\begin{itemize}
+\item	Built a web system that can intelligently predict the user’s mood based on the food they have eaten. 
+\item Used computer vision tools including Bubble Clarai and InterSystems FIHR API to build web system. 
+\item Classified data in CSV files and built the Computer Vision backend, Generative Adversarial Network (GAN).
+\item Completed project through testing phase in under 36 hours.
+
+% \item Hands on experience on iOS app called EventSecurity Committee
+\end{itemize}
+\divider
+
+
+\cvevent{Course Projects - Accomplished during coursework}{ *Request private access**Academic Honesty Policy*}{Fall '20 - Present}{Amherst, MA}
+
+
+\begin{itemize}
+\item \url{https://github.com/lonexreb/Systems-Programming}
+\item \url{https://github.com/lonexreb/DataStructureAndAlgo_CS187}
+% \item Hands on experience on iOS app called EventSecurity Committee
+\end{itemize}
+\divider
+
+\clearpage
+
+
+\end{document}
